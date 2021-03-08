@@ -29,6 +29,5 @@ void loop() {
   Serial.print(" K, ");
   Serial.print(tempC);
   Serial.println(" C");
-  delay(500);
+  delay(5000);
 }
-
