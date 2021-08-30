@@ -6,13 +6,15 @@
   by http://www.freenove.com
 */
 
-int sensorPin = 11; // the number of the infrared motion sensor pin
-int ledPin = 12;    // the number of the LED pin
+int sensorPin = A4; // the number of the infrared motion sensor pin
+int ledPin = A1;    // the number of the LED pin
 
 void setup() {
-  Serial.begin(9600);
   pinMode(sensorPin, INPUT_PULLUP);  // initialize the sensor pin as input
   pinMode(ledPin, OUTPUT);    // initialize the LED pin as output
+  pinMode(A9,OUTPUT);
+  digitalWrite(A9, HIGH);
+  Serial.begin(115200);    // Open serial monitor at 9600 baud to see ping results.
 }
 
 int status = -1;
