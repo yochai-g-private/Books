@@ -15,7 +15,7 @@ decode_results results; // Create a decoding results class object
 void setup()
 {
   Serial.begin(9600); // Initialize the serial port and set the baud rate to 9600
-  Serial.println("UNO is ready!!!");  // Print the string "UNO is ready!"
+  Serial.println("IR Receiver demo is ready!!!");  // Print the string "UNO is ready!"
   irrecv.enableIRIn(); // Start the receiver
 }
 
